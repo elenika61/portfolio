@@ -1,0 +1,146 @@
+/*селектор {
+    свойство : значение;
+    свойство : значение;
+    свойство : значение;
+    свойство : значение;*/
+    /*  *{} применяется для всего документа */
+    @font-face {
+        font-family:'Nautilus' ;
+        src: url(Nautilus.otf);
+    }
+*{
+  font-family: 'Montserrat', sans-serif;  
+}
+body{
+      /*цвет и картинка, которая  не повторяется и по центру.
+   */
+    background: linear-gradient(to bottom 
+    , #e7bebe,rgb(215, 104, 104)) ;
+   color: rgb(80, 26, 43);/* цвет текста*/
+      opacity:1;/*Прозрачность*/
+}
+a{
+    font: size 28px; /*размер шрифта*/
+    color:rgba(173, 9, 42, 0.92);
+    font-weight: 700; /*насыщенность шрифта*/
+    text-align: center; /*выравнивание текста*/
+    text-decoration: double; /*подчеркивание, зачеркивание...*/
+    line-height: 25px; /*межтекстовый интервал*/
+    }
+#btn{
+    width: 300px;/*ширина*/
+    height: 100px;/*высота*/
+    padding: 20px;/*отступ внутренний*/
+    margin: 30px;/*отступ внутренний*/
+    border: 10px solid #000;/*рамка: ширина, тип рамки, цвет*/
+    border-radius: 50%;/*скругление рамки*/
+    box-shadow:#000 10px 10px 10px ;/*тень элементацвет, размер, отступы*/
+     border-top-color: rgb(214, 197, 82);
+    border-bottom-color: rgb(17, 0, 80);
+    border-right-color: #ff00ff;
+    border-left-color: #ff00ff;
+    padding-right: 10px ;
+    padding-left: 20px;
+
+}
+.links{ 
+    font-size: 16px;
+}
+h2{font-family: 'Nautilus';}
+ul{list-style-type: square;/*стиь маркера*/
+}
+ul li{color: brown;
+}
+img{filter: blur(1px);
+    animation: hov 2s ease infinite;
+}
+main section{ max-width: 1200px;
+}
+.links a{
+    color: aqua;
+   }
+.container{
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+}
+header{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-block{
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+}
+a:hover{
+    color:#000 ;
+    font-size: 20px;
+}
+input::placeholder{
+    font-size: 18px;
+    color:red ;
+    }
+    .links :last-child{
+        font-size: 10px;
+        color: red;
+    }
+    .links :first-child{
+        font-size: 10px;
+        color: red;  
+    }
+    .links :nth-child(3){
+        font-size: 10px;
+        color: red; 
+        
+    }
+    @keyframes hov {
+        0%{opacity: 1;}
+        50%{opacity: .5;}
+        100%{opacity: 0;}
+    }
+    @media (max-width: 1024px)
+{   *{
+    font-size:  16px;
+    }
+    a {
+        font-size:  16px;
+    } 
+    .container{
+       max-width: 900px;
+    }
+}
+@media (max-width: 1024px) and (min-width: 768px) 
+{
+    .container{
+        max-width: 800px;
+     }
+   button{
+width: 150px;
+   }
+}
+ @media (max-width: 768px) and (min-width: 375px) 
+{
+    .container{
+        max-width: 400px;
+     }
+   
+}
+    
